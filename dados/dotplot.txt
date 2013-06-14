@@ -1,0 +1,18 @@
+#exp1.dat = read.table(file="C:/Users/Paola2/Documents/Universidade/experimentos/Escrita/4º experimento/Analise/dotplot.dat", header = T)
+exp1.dat = read.table(file="/Users/Rodrigo/Documents/workspaces/Phd/Disciplinas/ProjetoEstatistica2013/dados/dotplot.dat", header = T)
+
+attach(exp1.dat)
+
+replica = factor(replica.)
+student = factor(student.)
+feature = factor(feature.)
+technique = factor(technique.)
+
+require(ggplot2)
+p <- qplot(student,Time_Seconds, colour=feature, shape = factor(technique), xlab="Students", ylab="Time(Seconds)")
+p + geom_point(size=3) + labs(colour="Feature",shape="Technique")
+
+
+
+
+
