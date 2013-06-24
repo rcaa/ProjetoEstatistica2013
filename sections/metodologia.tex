@@ -1,4 +1,37 @@
 \section{Metodologia}
 \label{sec:metodologia}
 
-%Estabelecem-se as hipóteses a serem formuladas, as quais devem ser claras e precisa. Define-se o problema estatisticamente, decidindo-se que informação estatística é realmente necessária e qual método que será aplicado.
+%Estabelecem-se as hipóteses a serem formuladas, as quais devem ser claras e precisa. 
+
+
+%Ta faltando isso aqui:
+%Define-se o problema estatisticamente, decidindo-se que informação estatística é realmente necessária e qual método que será aplicado.
+
+Nesta seção, estabelecemos as hipóteses e definimos o problema estatisticamente.
+
+Primeiramente, definimos as hipóteses para a primeira questão de pesquisa (Seção~\ref{sec:especificacao}), ou seja, queremos saber se a ST reduz o esforço de execução do teste comparado com a GT:
+
+\begin{equation}
+	H_{0} : \mu_{TempoST} \geq \mu_{TempoGT}
+\end{equation}
+
+\begin{equation}
+	H_{1} : \mu_{TempoST} < \mu_{TempoGT}
+\end{equation}
+
+Em que (1) é a hipótese nula e (2) é a hipótese alternativa. Portanto, a equação 1 representa a hipótese de o tempo consumido para executar as suites de teste com a estratégia ST é maior ou igual ao consumido usando GT, enquanto que (2) representa a hipótese de o tempo consumido com a estratégia ST é menor que com a GT.
+
+Já considerando a segunda questão de pesquisa, ou seja, se o uso de ST reduz o número de CRs terminadas em comparação com GT, nós definimos as seguintes hipóteses:
+
+\begin{equation}
+	H_{0} : \mu_{CRsTerminadasST} \geq \mu_{CRsTerminadasGT}
+\end{equation}
+
+\begin{equation}
+	H_{1} : \mu_{CRsTerminadasST} < \mu_{CRsTerminadasGT}
+\end{equation}
+
+Em que (1) é a hipótese nula e (2) é a hipótese alternativa. Portanto, a equação 1 representa a hipótese de o número de CRs terminadas usando ST seja maior ou igual ao resultado usando GT, enquanto que a equação 2 representa a situação inversa, ou seja, o número de CRs terminadas com ST é menor que com GT.
+
+
+
