@@ -8,7 +8,7 @@ student = factor(student.)
 macrofeature = factor(feature.)
 technique = factor(technique.)
 
-plot(executionTime~technique,col="gray",xlab="Technique",ylab="Time(seconds)")
+plot(executionTime~technique,col="gray",xlab="Tecnica",ylab="Tempo(segundos)")
 
 anova.ql<-aov(executionTime~replic+student:replic+macrofeature+technique)
 
