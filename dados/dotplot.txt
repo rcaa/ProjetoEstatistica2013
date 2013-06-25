@@ -1,7 +1,7 @@
 #exp1.dat = read.table(file="C:/Users/Paola2/Documents/Universidade/experimentos/Escrita/4º experimento/Analise/dotplot.dat", header = T)
 exp1.dat = read.table(file="/Users/Rodrigo/Documents/workspaces/Phd/Disciplinas/ProjetoEstatistica2013/dados/dotplot.dat", header = T)
 
-#attach(exp1.dat)
+attach(exp1.dat)
 
 #factor eh um vetor usado para especificar classificacao discreta
 #replica, student, feature e technique sao os dados gravados com esses nomes em dotplot.dat
@@ -14,10 +14,10 @@ technique = factor(technique.)
 require(ggplot2)
 
 #gplot eh a funcao do pacote ggplot2 que monta o dotplot
-p <- qplot(student,Time_Seconds, colour=feature, shape = factor(technique), xlab="Students", ylab="Time(Seconds)")
+p <- qplot(student,Time_Seconds, colour=feature, shape = factor(technique), xlab="Estudantes", ylab="Tempo(segundos)")
 #geom_point indica o tamanho dos shapes no grafico
 #labs adiciona legenda para factor(technique) e feature
-p + geom_point(size=3) + labs(colour="Feature",shape="Technique")
+p + geom_point(size=3) + labs(colour="Feature",shape="Tecnica")
 
 
 
