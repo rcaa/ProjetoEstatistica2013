@@ -7,9 +7,9 @@ Nesta seção, nós determinamos a área de execução da pesquisa, a populaçã
 
 A área de execução da pesquisa é inserida no contexto de estratégias de testes para Linhas de Produto de Software (LPS)~\cite{pohl-book}. Para atingir os objetivos mencionados na Seção~\ref{sec:objetivos}, um experimento foi definido para investigar como uma população lidaria com as duas estratégias de testes para LPS e consequentemente, trazendo evidências de qual estratégia é a melhor.
 
-Esse experimento foi definido usando a abordagem Goal (objetivo), Question (pergunta) e Metric (métrica) (GQM)~\cite{gqm}. Primeiramente, definimos o objetivo, que é analisar o processo de execução de teste das duas estratégias considerando a eficiência em termos de tempo de execução. Segundo, definimos a pergunta de pesquisa: A ST reduz o esforço de execução do teste comparado com a GT? Por último, definimos uma métrica: tempo de execução dos testes.
+Esse experimento foi definido usando a abordagem Goal (objetivo), Question (pergunta) e Metric (métrica) (GQM)~\cite{gqm}. Primeiramente, definimos o objetivo, que é analisar o processo de execução de teste das duas estratégias considerando a eficiência em termos de tempo de execução. Segundo, definimos a pergunta de pesquisa: A TE reduz o esforço de execução do teste comparado com a TG? Por último, definimos uma métrica: tempo de execução dos testes.
 
-Para realizar esse experimento definido, utilizamos uma população composta por 18 alunos de pós-graduação. Eles foram divididos em duplas e usaram as estratégias ST e GT para testar um conjunto de features em uma LPS. Durante esse experimento, coletamos o tempo de execução da suites de testes de cada dupla, cada estudante de uma dada dupla, associados a feature e técnica que usaram para formar nossa amostra. A Tabela~\ref{tab:amostra} exibe uma parte pequena dessa amostra que coletamos e analisamos\footnote{Os dados completos podem ser obtidos em: https://github.com/rcaa/ProjetoEstatistica2013/tree/master/dados}, como detalhado na Seção~\ref{sec:analise}. As variáveis envolvidas são número da dupla, estudante, feature, técnica e tempo de execução.
+Para realizar esse experimento definido, utilizamos uma população composta por 18 alunos de pós-graduação. Eles foram divididos em duplas e usaram as estratégias TE e TG para testar um conjunto de features em uma LPS. Durante esse experimento, coletamos o tempo de execução da suites de testes de cada dupla, cada estudante de uma dada dupla, associados a feature e técnica que usaram para formar nossa amostra. A Tabela~\ref{tab:amostra} exibe uma parte pequena dessa amostra que coletamos e analisamos\footnote{Os dados completos podem ser obtidos em: https://github.com/rcaa/ProjetoEstatistica2013/tree/master/dados}, como detalhado na Seção~\ref{sec:analise}. As variáveis envolvidas são número da dupla, estudante, feature, técnica e tempo de execução.
 
 \begin{table}[h]\footnotesize
     \caption{Dados da amostra}
@@ -18,8 +18,8 @@ Para realizar esse experimento definido, utilizamos uma população composta por
     \addlinespace
     \hline
     {\bf Nº da dupla}  & {\bf Estudante} & {\bf Feature} & {\bf Técnica} & {\bf Tempo de execução}\\ \hline
-    1 & 1 & F1 & GT & 880\\ \hline
-    1 & 1 & F2 & ST & 841\\ \hline
+    1 & 1 & F1 & TG & 880\\ \hline
+    1 & 1 & F2 & TE & 841\\ \hline
     \end{tabular}
   \label{tab:amostra}
 \end{table}
