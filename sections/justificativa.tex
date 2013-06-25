@@ -2,4 +2,63 @@
 
 \label{sec:justificativa}
 
-%De início, explicitam-se os motivos que justificam a pesquisa, determinando-se e delimitando-se o problema, o qual deve estar formulado de maneira clara e precisa
+%De inÃ­cio, explicitam-se os motivos que justificam a pesquisa, determinando-se e delimitando-se o problema, 
+%o qual deve estar formulado de maneira clara e precisa
+
+Engenharia de Linhas de Produto de Software (LPS) é uma abordagem de
+desenvolvimento que reusa de forma estratégica uma base comum de artefatos que
+implementam um conjunto de sistema similares que compartilham características em
+comum, mas também são suficientemente distintos entre si. Alguns dos benefícios
+esperados por essa abordagem são: redução de \emph{time-to-market} para
+lançamento de novos produtos, redução do esforço de manutenção e,
+indiretamente, a melhora da qualidade dos produtos~\cite{pohl-book}.
+
+Nesse contexto, a atividade de testes de LPS tem sido considerada um desafio,
+principalmente devido a enorme quantidade de produtos gerados por uma LPS e
+também porque os requisitos variam de um produto para o outro de forma que não
+existe uma especificação única que contemple todos os possíveis fluxos dos
+produtos de uma linha. Para lidar com esses problemas, várias técnicas que
+derivam casos de testes funcionais para produtos específicos dentro de uma LPS
+tem sido propostas como PLUTO~\cite{Bertolino:pluto} e
+ScenTED~\cite{Pohl:scented}. No entanto, apesar de várias propostas de solução, 
+essa área de pesquisa ainda não possui uma quantidade satisfatória de avaliações
+empíricas que tragam análises e evidências sobre o benefício na prática de se
+utilizar casos de teste específicos por produto
+
+Essa falta de discussões pode ser um dos fatores que acabe por desencorajar a
+indústria a adotar tais técnicas~\cite{Tevanlinna:spltesting, Engstrom2011}.
+Como resultado, pelo que observamos em um ambiente de execução de testes na
+indústria, empresas comumente descrevem o comportamento dos produtos de uma
+mesma linha de uma maneira genérica, descrevendo os passos mais comuns entre os
+produtos e abstraindo o fato de que alguns passos são opcionais ou alternativos
+e algumas vezes até omitindo tais passos. Por exemplo, um caso de teste que
+especifica um cenário de uma funcionalidade de geração de relatórios pode conter
+todos os possíveis formatos de arquivos de relatório como PDF, HTML, XLS, e
+testadores utilizariam esse teste para testar todos os produtos da linha, mesmo
+no caso em que os produtos gerados não possuam todas essas opções de formato de
+relatórios. 
+
+No entanto, as abstrações contidas nas suítes genéricas podem comprometer a
+execução manual dos testes, pois os testadores, que devem seguir estritamente o
+passo-a-passo descrito nos testes, podem se confundir. Essa confusão pode levar
+a consequências indesejadas tais como defeitos escapados -- aqueles defeitos que
+só são descobertos após o lançamento do produto no mercado -- e defeitos que são
+reportados mas não existem -- o que afeta a produtividade do processo de
+execução dos testes.
+
+Alternativamente, com a adoção de uma técnica de especificação de testes para
+uma LPS,
+
+ Nesse trabalho
+apresentamos estudos que comparam empiricamente duas técnicas de desenvolvimento de casos de teste. Uma técnica genérica observada em um ambiente
+real de execução de testes e uma técnica de casos de teste específicos por
+produto cujos testes poderiam ser obtidos através de qualquer uma das técnicas
+de derivação de testes existente. Para comparar essas técnicas, conduzimos 5
+experimentos controlados avaliando o impacto das técnicas sob o ponto de vista
+do processo de execução de testes, coletando métricas relacionadas ao esforço
+de execução de testes. Após a análise dos dados coletados alcançamos resultados
+que sugerem benefícios, tais como redução do tempo de execução, que
+a indústria poderia alcançar ao adotar uma técnica de derivação de testes.
+
+
+
