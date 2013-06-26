@@ -32,3 +32,7 @@ Em que (1) é a hipótese nula e (2) é a hipótese alternativa. Portanto, a equ
 %\end{equation}
 
 %Em que (1) é a hipótese nula e (2) é a hipótese alternativa. Portanto, a equação 1 representa a hipótese de o número de CRs terminadas usando TE seja maior ou igual ao resultado usando TG, enquanto que a equação 2 representa a situação inversa, ou seja, o número de CRs terminadas com TE é menor que com TG.
+
+Definida a hipótese, nós queremos investigar estatisticamente o desempenho dos estudantes com relação ao tempo de execução da suite de testes. Isso permite concluirmos qual é a melhor estratégia (TE ou TG) para execução de testes em Linhas de Produto de Software num ambiente de desenvolvimento de uma organização com tamanho médio.
+
+No nosso estudo estatístico, nós usamos Análise de Variância (ANOVA)~\cite{Wohlin2000} para testar nossa hipótese e verificar se a tendência de que TE é melhor que TG, que foi observada nas amostras, era significante, de fato. Nesse contexto, escolhemos o ANOVA para comparar o efeito do tratamento às variáveis. Nós usamos o \emph{Tukey Test of Additivity} para verificar se o nosso modelo linear era aditivo~\cite{citeulike:2905018}. Além disso, como foi mostrado na Seção~\ref{sec:normalidade}, nós usamos o teste Shapiro-Wilk para verificar normalidade. Depois de garantir essas propriedades, nós executamos o teste ANOVA e alcançamos um \emph{p-value} para o fator da estratégia de aproximadamente 0,0001, o que nos dá evidência significante de que a estratégia TG pode reduzir o tempo de execução das suites de testes.
