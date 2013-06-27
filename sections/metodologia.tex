@@ -8,6 +8,7 @@ Nesta seção, estabelecemos as hipóteses e definimos o problema estatisticamen
 
 Primeiramente, definimos as hipóteses para a questão de pesquisa (Seção~\ref{sec:especificacao}), ou seja, queremos saber se a TE reduz o esforço de execução do teste comparado com a TG:
 
+\footnotesize
 \begin{equation}
 	H_{0} : \mu_{TempoST} \geq \mu_{TempoGT}
 \end{equation}
@@ -15,8 +16,9 @@ Primeiramente, definimos as hipóteses para a questão de pesquisa (Seção~\ref
 \begin{equation}
 	H_{1} : \mu_{TempoST} < \mu_{TempoGT}
 \end{equation}
+\normalsize
 
-Em que (1) é a hipótese nula e (2) é a hipótese alternativa. Portanto, a equação 1 representa a hipótese de o tempo consumido para executar as suites de teste com a estratégia TE é maior ou igual ao consumido usando TG, enquanto que (2) representa a hipótese de o tempo consumido com a estratégia TE é menor que com a TG.
+Em que (3) é a hipótese nula e (4) é a hipótese alternativa. Portanto, a equação (3) representa a hipótese de o tempo consumido para executar as suítes de teste com a técnica TE é maior ou igual ao consumido usando TG, enquanto que (4) representa a hipótese de o tempo consumido com a técnica TE é menor que com a TG.
 
 %Já considerando a segunda questão de pesquisa, ou seja, se o uso de ST reduz o número de CRs terminadas em comparação com GT, nós definimos as seguintes hipóteses:
 
@@ -30,6 +32,6 @@ Em que (1) é a hipótese nula e (2) é a hipótese alternativa. Portanto, a equ
 
 %Em que (1) é a hipótese nula e (2) é a hipótese alternativa. Portanto, a equação 1 representa a hipótese de o número de CRs terminadas usando TE seja maior ou igual ao resultado usando TG, enquanto que a equação 2 representa a situação inversa, ou seja, o número de CRs terminadas com TE é menor que com TG.
 
-Definida a hipótese, nós queremos investigar estatisticamente o desempenho dos estudantes com relação ao tempo de execução da suite de testes. Isso permite concluirmos qual é a melhor estratégia (TE ou TG) para execução de testes em Linhas de Produto de Software num ambiente de desenvolvimento de uma organização com tamanho médio.
+Definida a hipótese, nós queremos investigar estatisticamente o desempenho dos estudantes com relação ao tempo de execução da suite de testes. Isso permite concluirmos qual é a melhor técnica (TE ou TG) para execução de testes em Linhas de Produto de Software num ambiente de desenvolvimento de uma organização com tamanho médio.
 
 No nosso estudo estatístico, nós usamos Análise de Variância (ANOVA)~\cite{Wohlin2000teste} para testar nossa hipótese e verificar se a tendência de que TE é melhor que TG, que foi observada nas amostras, era significante, de fato. Nesse contexto, escolhemos o ANOVA para comparar o efeito do tratamento às variáveis. Nós usamos o \emph{Tukey Test of Additivity} para verificar se o nosso modelo linear era aditivo~\cite{citeulike:2905018}. Além disso, como foi mostrado na Seção~\ref{sec:normalidade}, nós usamos o teste Shapiro-Wilk para verificar normalidade.

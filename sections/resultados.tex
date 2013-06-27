@@ -8,7 +8,7 @@ Nessa seção, nós mostramos como tratamos os dados da amostra por intermédio 
 Para interpretar os dados, nós primeiramente conduzimos uma análise descritiva
 para observar tendência nos dados baseada em algumas características como
 dispersão e mediana. Nós elaboramos o gráfico Boxplot ilustrado na
-Figura~\ref{fig:boxplot} para comparar a execução das estratégicas TE e TG. Esse
+Figura~\ref{fig:boxplot} para comparar a execução das técnicas TE e TG. Esse
 gráfico mostra que o tempo de execução dos testes tende a ser menor para TE. A
 média para completar as atividades usando TG foi de 975 segundos, enquanto que a
 média para TG foi de 824 segundos. A TE teve uma diminuição média de 15\% no
@@ -38,15 +38,15 @@ resultados.
     \label{fig:dotplot}
 \end{figure}
 
-Além dos valores da mediana, nós queríamos comparar as observações de acordo com cada resultado das estratégias (TE e TG). Nós pudemos observar para ambas as estratégias que não importa a feature usada para executar os casos de testes, 94\% dos estudantes terminaram em menos tempo usando TE. Dos 18 alunos analisados, só um levou mais tempo para executar os testes com TE.
+Além dos valores da mediana, nós queríamos comparar as observações de acordo com cada resultado das técnicas (TE e TG). Nós pudemos observar para ambas as técnicas que não importa a feature usada para executar os casos de testes, 94\% dos estudantes terminaram em menos tempo usando TE. Dos 18 alunos analisados, só um levou mais tempo para executar os testes com TE.
 
 Continuando com a análise estatística, nós queremos verificar se a tendência
 observada nas nossas amostras foi de fato significante. Para verificar isso, nós
 rodamos teste de hipótese paramétrico baseado na média. Nesse contexto, nós
 usamos o ANOVA como dito na Seção~\ref{sec:metodologia}. Nós executamos o teste
-ANOVA e alcançamos um \emph{p-value} para o fator da estratégia de
+ANOVA e alcançamos um \emph{p-value} para o fator da técnica de
 aproximadamente 0,0001, como nosso nível de significância foi de 0,05 esse
-resultado nos dá evidência significante de que a estratégia TE pode reduzir
-o tempo de execução das suites de testes.
+resultado nos dá evidência significante de que a técnica TE pode reduzir
+o tempo de execução das suítes de testes.
 
 Todo código escrito em R, dados e fontes do texto podem ser acessados livremente no nosso repositório: \\https://github.com/rcaa/ProjetoEstatistica2013
